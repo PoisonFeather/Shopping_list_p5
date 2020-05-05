@@ -1,0 +1,98 @@
+  li{
+  font-size:155%;
+  font-weight:700;
+  animation: fadein 2.5s;
+  padding-left:15px;
+  min-width:fit-content;
+  max-width:fit-content;
+  transition:1s;
+  left:0;
+  color:rgba(212,179,51,1);
+}
+input{
+  float:right;
+  clear: both;
+  padding-left:15px;
+  border:2px solid rgba(255, 132, 0,1);
+  background-color:rgba(235, 91, 47,0.5);
+  border-radius:4px;
+  max-width:350px;
+  width:50%;
+  font-size:25px;
+}
+
+input:focus{
+  transition:border 0.75s;
+  border:5px solid rgba(163, 88, 8,0.8);
+}
+input:not(focus){
+  transition:border 0.5s;
+}
+@keyframes fadein{
+  from{opacity:0.1;}
+  to{opacity1;}
+}
+
+@keyframes fadeout{
+  from{opacity:1;}
+  to{opacity0.45;}
+}
+@keyframes fadein1{
+  from{opacity:0.45;}
+  to{opacity1;}
+}
+
+p{
+  font-size:200%;
+  font-family:mv boli;
+  font-weight:700;
+  animation: fadein 2.5s;
+  color:rgba(212,179,51,1);
+}
+
+body{
+
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height:100%;
+    overflow:auto;
+
+}
+
+#refreshme{
+  float:right;
+  opacity:0.45;
+  background-color: rgb(134,213,11);
+  border:none;
+  position:absolute;
+  color:white;
+  padding:15px 32px;
+  text-align:center;
+  text-decoration:none;
+  bottom:0px;
+  right:10px;
+  font-size:100%;
+  border-radius:7px;
+}
+#refreshme:hover{
+  animation:fadein1 1.5s;
+  opacity:1;
+  animation-name:round;
+  animation-duration:s;
+}
+
+#refreshme:not(hover){
+  animation:fadeout 1.5s;
+  opacity:0.45;
+}
+@keyframes round{
+  from{border-radius:7px;}
+  to{border-radius:21px;}
+}
+
+html{
+  overflow:hidden;
+  height:100%;
+}
